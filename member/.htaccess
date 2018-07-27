@@ -1,0 +1,27 @@
+RewriteEngine on
+RewriteBase /member
+
+RewriteRule ^$ media.php?module=home [L]
+RewriteRule ^login\.html$ media.php?module=form_login&id=$1 [L]
+RewriteRule ^daftar\.html$ media.php?module=daftar&id=$1 [L]
+RewriteRule ^about-us\.html$ media.php?module=profilkami&id=$1 [L]
+RewriteRule ^contact-us\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^donation\.html$ media.php?module=donation&id=$1 [L]
+RewriteRule ^help\.html$ media.php?module=help&id=$1 [L]
+RewriteRule ^all-news\.html$ media.php?module=semuaberita&id=$1 [L]
+RewriteRule ^all-news-page-(.*)\.html$ media.php?module=semuaberita&halberita=$1 [L]
+RewriteRule ^news-(.*)\.html$ media.php?module=detailberita&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^kelebihan\.html$ media.php?module=kelebihan&id=$1 [L]
+RewriteRule ^kelemahan\.html$ media.php?module=kekurangan&id=$1 [L]
+RewriteRule ^konsultasi-(.*)\.html$ media.php?module=konsultasi&answer=$1 [L]
+RewriteRule ^simpan-pasien\.html$ media.php?module=simpanpasien&id=$1 [L]
+RewriteRule ^hasil\.html$ media.php?module=hasil&id=$1 [L]
+RewriteRule ^analisa-hasil\.html$ media.php?module=analisahasil&id=$1 [L]
+RewriteRule ^detail-analisa-(.*)\.html$ media.php?module=detailanalisa&id=$1 [L]
+RewriteRule ^account\.html$ media.php?module=account&id=$1 [L]
+RewriteRule ^aksi-account\.html$ media.php?module=aksiaccount&id=$1 [L]
+RewriteRule ^warning\.html$ media.php?module=peringatan&id=$1 [L]
+
+
+#Options All -Indexes
